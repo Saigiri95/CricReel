@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CricReel – Student Project</title>
+
+    <!-- Tailwind & Icons -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CricReel.css">
+</head>
+<body>
+
+<div class="app-container">
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <span class="live-badge">● LIVE</span>
+        <i class="fa-solid fa-bell"></i>
+    </div>
+
+    <!-- Reels Container -->
+    <div class="snap-container">
+
+        <!-- Reel 1 -->
+        <div class="reel">
+            <video class="video-bg" autoplay muted loop>
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-stadium-lights-and-crowd-at-night-18508-large.mp4">
+            </video>
+
+            <div class="overlay">
+
+                <!-- Score Card -->
+                <div class="score-card">
+                    <p class="match">IND vs AUS • T20</p>
+                    <p class="score">184/3 (18.2)</p>
+                    <p class="player">Kohli 82*</p>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="actions">
+                    <button onclick="likeVideo()">
+                        <i id="likeIcon" class="fa-regular fa-heart"></i>
+                        <span id="likeCount">2.4M</span>
+                    </button>
+
+                    <button onclick="showComments()">
+                        <i class="fa-solid fa-comment"></i>
+                        <span>18K</span>
+                    </button>
+
+                    <button>
+                        <i class="fa-solid fa-share"></i>
+                        <span>Share</span>
+                    </button>
+                </div>
+
+                <!-- Bottom Text -->
+                <div class="bottom-info">
+                    <p class="username">@ICC_OFFICIAL</p>
+                    <p class="caption">
+                        Kohli plays a perfect straight drive! 🏏🔥
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Reel 2 -->
+        <div class="reel center-text">
+            <p>Swipe up for next highlight</p>
+        </div>
+
+    </div>
+
+    <!-- Comments Panel -->
+    <div class="comment-panel" id="commentPanel">
+        <div class="comment-header">
+            <h3>Comments</h3>
+            <button onclick="hideComments()">✕</button>
+        </div>
+
+        <div class="comments">
+            <p><b>@fan1</b> Amazing shot 🔥</p>
+            <p><b>@fan2</b> King Kohli 👑</p>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+        <i class="fa-solid fa-house active"></i>
+        <i class="fa-solid fa-search"></i>
+        <i class="fa-solid fa-plus add-btn"></i>
+        <i class="fa-solid fa-chart-bar"></i>
+        <i class="fa-solid fa-user"></i>
+    </div>
+
+</div>
+
+<!-- Custom JS -->
+<script src="CricReel.js"></script>
+</body>
+</html>
