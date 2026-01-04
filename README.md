@@ -18,4 +18,5 @@ CricReel is a frontend web application inspired by Instagram Reels, focused on c
 This project was built as part of Full Stack Web Development practice to improve frontend skills and JavaScript DOM manipulation.
 
 ## 🔗 Live Demo
-https://saigiri95.github.io/index/
+https://saigiri95.github.io/CricReel/
+
